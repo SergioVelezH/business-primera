@@ -1,0 +1,213 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 430px;
+  /* padding: 10px; */
+}
+
+.modal__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.modal__image--cancel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0.3;
+}
+
+.modal__image--one {
+  width: 100vw;
+  height: 210px;
+  object-fit: cover;
+}
+
+.modal__title {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.modal__title--span {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 24px;
+  display: inline-block;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.modal__title--second {
+  color: rgb(45, 144, 211);
+  display: inline-block;
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 26px;
+}
+
+.modal__table {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 15px 0px;
+  border: 1px solid rgb(214, 209, 209);
+  overflow: hidden;
+  border-radius: 10px;
+  width: calc(100vw - 40px);
+  min-height: 345px;
+}
+
+.modal__table div {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  height: auto;
+  border-bottom: 1px solid rgb(214, 209, 209);
+}
+
+p {
+  margin: 0;
+  display: grid;
+  height: 100%;
+  border-right: 1px solid rgb(214, 209, 209);
+}
+
+.modal__table div:nth-child(1) {
+  background-color: rgb(240, 238, 238);
+  height: 35px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+
+.modal__table div:last-child {
+  border-bottom: none;
+}
+
+.modal__table div span:nth-child(1) {
+  text-align: start;
+  align-self: center;
+  font-size: 18px;
+  color: rgb(75, 73, 73);
+  font-weight: bold;
+  padding: 12px 0px 12px 20px;
+  border-right: 1px solid rgb(214, 209, 209);
+}
+
+.modal__table div img:nth-child(2) {
+  border-right: 1px solid rgb(214, 209, 209);
+  background-color: red;
+}
+
+.modal__table div img {
+  height: 20px;
+  align-self: center;
+  justify-self: center;
+}
+
+.modal__table--seat--description {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__table--seat--2--note {
+  font-size: 12px;
+  color: grey;
+  margin: 0;
+}
+
+.modal__note {
+  font-size: 14px;
+  color: grey;
+  width: calc(100vw - 40px);
+  padding-bottom: 20px;
+}
+
+.modal__button {
+  display: flex;
+  flex-direction: row;
+  width: calc(100vw - 40px);
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.modal__button button {
+  padding: 10px 26px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.modal__button--first {
+  background-color: rgb(45, 144, 211);
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.modal__button--business {
+  border: 1px solid rgb(206, 199, 199);
+  border-radius: 30px;
+  color: rgb(45, 144, 211);
+  cursor: pointer;
+}
+
+.modal__button--first:hover {
+  background-color: rgb(106, 188, 243);
+}
+
+.modal__button--business:hover {
+  color: white;
+  background-color: rgb(106, 188, 243);
+  border: 1px solid transparent;
+}
+
+@media screen and (max-width: 412px) {
+  .modal__title--span {
+    font-size: 20px;
+  }
+  .modal__title--second {
+    font-size: 24px;
+  }
+  .modal__table div span:nth-child(1) {
+    font-size: 16px;
+  }
+  .modal__button button {
+    font-size: 14px;
+  }
+
+  .modal__table {
+    min-height: auto;
+  }
+
+  .modal__table div:nth-child(1) {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .modal__title--span {
+    font-size: 18px;
+  }
+  .modal__title--second {
+    font-size: 22px;
+  }
+  .modal__table div span:nth-child(1) {
+    font-size: 14px;
+  }
+  .modal__button button {
+    font-size: 12px;
+  }
+  .modal__table div:nth-child(1) {
+    font-size: 14px;
+  }
+  .modal__table {
+    min-height: auto;
+  }
+}
